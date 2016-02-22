@@ -216,4 +216,4 @@ pip-log.txt
 .mr.developer.cfg
 
 #Node Modules
-.node_modules
+node_modules
