@@ -14,6 +14,7 @@ const PATHS = {
   build: path.join(__dirname, 'build')
 };
 
+process.env.BABEL_ENV = TARGET;
 const common = {
 
   // Entry accepts a path or an object of entries. We'll be using the
@@ -42,7 +43,7 @@ const common = {
       },
       {
         test:/\.jsx?$/,
-        loaders:["babel?cacheDirectory, presets[]=react,presets[]=es2015"],
+        loaders:["babel"],
         include: PATHS.app
       }
     ]
