@@ -1,8 +1,8 @@
 import React from "react";
-import Note from "./Note.jsx";
+import Layout from "./components/layout/Layout.jsx";
 
 export default class App extends React.Component{
   render(){
-    return <Note />;
+    return <Layout />;
   }
 }
