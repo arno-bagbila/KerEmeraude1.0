@@ -29,6 +29,8 @@ export default class Layout extends React.Component{
             width:"100%"
         }
 
+        var content = <Homepage />
+
         return(
             <div className="container-fluid" style={bodyStyle}>
                 <div className="col-md-2" style={borderStyle}>
@@ -37,7 +39,7 @@ export default class Layout extends React.Component{
                 <div className="col-md-8" style={contentStyle}>
                     <div className="my_navabar" style={navbarStyle}></div>
                     <div style={homepageStyle}>
-                        <Homepage style={homepageStyle} />
+                        {content}
                     </div>
                     <div className="my_footer" style={footerStyle}></div>
                 </div>
