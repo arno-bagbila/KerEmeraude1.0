@@ -1,5 +1,9 @@
 import React from "react";
 import Homepage from "../../components/homepage/Homepage.jsx";
+import Footer from "./Footer.jsx";
+import LeftBorder from "./LeftBorder.jsx";
+import RightBorder from "./RightBorder.jsx";
+import Navbar from "./Navbar.jsx";
 
 export default class Layout extends React.Component{
   render() {
@@ -34,17 +38,21 @@ export default class Layout extends React.Component{
         return(
             <div className="container-fluid" style={bodyStyle}>
                 <div className="col-md-2" style={borderStyle}>
-                        <h3>First thing</h3>
+                  <LeftBorder />
                 </div>
                 <div className="col-md-8" style={contentStyle}>
-                    <div className="my_navabar" style={navbarStyle}></div>
+                    <div className="my_navabar" style={navbarStyle}>
+                      <Navbar />
+                    </div>
                     <div style={homepageStyle}>
                         {content}
                     </div>
-                    <div className="my_footer" style={footerStyle}></div>
+                    <div className="my_footer" style={footerStyle}>
+                      <Footer />
+                    </div>
                 </div>
                 <div className="col-md-2" style={borderStyle}>
-                    <h3>Third thing</h3>
+                    <RightBorder />
                 </div>
             </div>
             );
