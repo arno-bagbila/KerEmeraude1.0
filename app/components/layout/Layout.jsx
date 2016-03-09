@@ -25,7 +25,8 @@ export default class Layout extends React.Component{
             width: "100%"
         }
         var homepageStyle = {
-            height: "80%"
+            height: "80%",
+            overflowY: auto
         }
         var footerStyle = {
             height: "8%",
