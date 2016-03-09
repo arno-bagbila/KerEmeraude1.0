@@ -1,6 +1,6 @@
 html, body {
-    height: 100%
+    background-color:grey;
+    max-width: 100%;
+    overflow-x: hidden;
 }
-#app{
-    height: 100%
-}
+

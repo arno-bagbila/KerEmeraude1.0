@@ -7,54 +7,58 @@ import Navbar from "./Navbar.jsx";
 
 export default class Layout extends React.Component{
   render() {
+      
+      var navbarStyle = {
+            backgroundColor: "red"
+        }
         var contentStyle = {
-            backgroundColor: "red",
-            height: "100%",
-            padding: "0"
-        }
-        var bodyStyle = {
-            height: "100%"
-        }
-        var borderStyle = {
-            backgroundColor: "grey",
-            height: "100%"
-        }
-        var navbarStyle = {
-            height: "10%",
-            backgroundColor: "azure",
-            width: "100%"
-        }
-        var homepageStyle = {
-            height: "80%",
-            overflowY: auto
+            backgroundColor:"green"
         }
         var footerStyle = {
-            height: "8%",
-            backgroundColor: "azure",
-            width:"100%"
+            backgroundColor: "yellow"
         }
+     
 
         var content = <Homepage />
 
         return(
-            <div className="container-fluid" style={bodyStyle}>
-                <div className="col-md-2" style={borderStyle}>
-                  <LeftBorder />
-                </div>
-                <div className="col-md-8" style={contentStyle}>
-                    <div className="my_navabar" style={navbarStyle}>
-                      <Navbar />
-                    </div>
-                    <div style={homepageStyle}>
-                        {content}
-                    </div>
-                    <div className="my_footer" style={footerStyle}>
-                      <Footer />
+            <div>
+                <div className="row">
+                    <div className="container-fluid">
+                        <div className="col-md-2">
+                        </div>
+                        <div className="col-md-8" style={navbarStyle}>
+                            <Navbar />
+                        </div>
+                        <div className="col-md-2">
+                        </div>
                     </div>
                 </div>
-                <div className="col-md-2" style={borderStyle}>
-                    <RightBorder />
+                <div className="row">
+                    <div className="container-fluid">
+                        <div className="col-md-2">
+                            <LeftBorder/>
+                        </div>
+                        <div className="col-md-8" style={contentStyle} >
+                            <Homepage/>
+                        </div>
+                        <div className="col-md-2">
+                            <RightBorder/>
+                        </div>
+                    </div>
                 </div>
+                <div className="row">
+                    <div className="container-fluid">
+                        <div className="col-md-2">
+                        </div>
+                        <div className="col-md-8" style={footerStyle}>
+                            <Footer />
+                        </div>
+                        <div className="col-md-2">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             );
           }
