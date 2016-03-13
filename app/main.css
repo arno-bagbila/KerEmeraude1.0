@@ -4,3 +4,10 @@ html, body {
     overflow-x: hidden;
 }
 
+#menuHome{
+    margin-right: 400px;
+}
+
+ul>li{
+    margin-right: 40px;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import Homepage from "../../components/homepage/Homepage.jsx";
 import Footer from "./Footer.jsx";
 import LeftBorder from "./LeftBorder.jsx";
 import RightBorder from "./RightBorder.jsx";
@@ -18,9 +17,6 @@ export default class Layout extends React.Component{
             backgroundColor: "yellow"
         }
      
-
-        var content = <Homepage />
-
         return(
             <div>
                 <div className="row">
@@ -40,7 +36,7 @@ export default class Layout extends React.Component{
                             <LeftBorder/>
                         </div>
                         <div className="col-md-8" style={contentStyle} >
-                            <Homepage/>
+                            {this.props.children}
                         </div>
                         <div className="col-md-2">
                             <RightBorder/>
