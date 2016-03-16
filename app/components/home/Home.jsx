@@ -1,4 +1,8 @@
 import React from "react";
+import Carousel from "./Carousel.jsx";
+import Weather from "./Weather.jsx";
+import Map from "./Map.jsx";
+import HomeAbout from "./HomeAbout.jsx";
 
 export default class Homepage extends React.Component{
   render(){
@@ -6,19 +10,17 @@ export default class Homepage extends React.Component{
       <div>
         <div className="row">
             <div className="container-fluid">
-                <h3>Carousel</h3>
+                <Carousel />
             </div>
         </div>
         <div className="row">
             <div className="container-fluid">
                 <div className="col-md-6">
-                    <h3>
-                        Weather
-                        About
-                    </h3>
+                    <Weather />
+                    <HomeAbout />
                 </div>
                 <div className="col-md-6">
-                    <h3>Map</h3>
+                    <Map />
                 </div>
             </div>
         </div>

@@ -11,3 +11,8 @@ html, body {
 ul>li{
     margin-right: 40px;
 }
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:90%;
+      margin: auto;
+  }

@@ -11,7 +11,8 @@ export default class Layout extends React.Component{
             backgroundColor: "red"
         }
         var contentStyle = {
-            backgroundColor:"green"
+            backgroundColor:"green",
+            padding : 0
         }
         var footerStyle = {
             backgroundColor: "yellow"
