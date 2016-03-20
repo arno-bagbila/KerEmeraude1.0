@@ -1,3 +1,4 @@
+import "./layoutStyle.css";
 import React from "react";
 import NavbarLink from "./NavbarLink.jsx";
 

@@ -1,0 +1,12 @@
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:100%;
+  }
+.weatherBox{
+    background-color: white;
+    width:100%;
+}
+
+.mapBox{
+    background-color: white;
+}

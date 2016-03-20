@@ -3,16 +3,3 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-#menuHome{
-    margin-right: 400px;
-}
-
-ul>li{
-    margin-right: 40px;
-}
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width:90%;
-      margin: auto;
-  }

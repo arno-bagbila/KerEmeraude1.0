@@ -7,24 +7,13 @@ import Navbar from "./Navbar.jsx";
 export default class Layout extends React.Component{
   render() {
       
-      var navbarStyle = {
-            backgroundColor: "red"
-        }
-        var contentStyle = {
-            backgroundColor:"green",
-            padding : 0
-        }
-        var footerStyle = {
-            backgroundColor: "yellow"
-        }
-     
         return(
             <div>
                 <div className="row">
                     <div className="container-fluid">
                         <div className="col-md-2">
                         </div>
-                        <div className="col-md-8" style={navbarStyle}>
+                        <div className="col-md-8 navbarBox">
                             <Navbar />
                         </div>
                         <div className="col-md-2">
@@ -36,7 +25,7 @@ export default class Layout extends React.Component{
                         <div className="col-md-2">
                             <LeftBorder/>
                         </div>
-                        <div className="col-md-8" style={contentStyle} >
+                        <div className="col-md-8 contentBox">
                             {this.props.children}
                         </div>
                         <div className="col-md-2">
@@ -48,7 +37,7 @@ export default class Layout extends React.Component{
                     <div className="container-fluid">
                         <div className="col-md-2">
                         </div>
-                        <div className="col-md-8" style={footerStyle}>
+                        <div className="col-md-8 footerBox">
                             <Footer />
                         </div>
                         <div className="col-md-2">

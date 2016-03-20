@@ -1,0 +1,20 @@
+#menuHome{
+    margin-right: 400px;
+}
+
+ul>li{
+    margin-right: 40px;
+}
+.navbarBox{
+    background-color: orange;
+}
+
+.contentBox{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footerBox{
+    background-color: yellow;
+}
